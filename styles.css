@@ -1,0 +1,145 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid black;
+}
+
+body {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.outer-container {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 700px) {
+    .outer-container {
+        flex-direction: column;
+    }
+}
+
+.side-bar {
+    width: 20%;
+    background-color: salmon;
+    padding: 1rem;
+}
+
+
+@media (max-width: 700px) {
+    .side-bar {
+        width: 100%;
+    }
+}
+
+.side-bar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.side-bar ul li {
+    margin: 0.25rem;
+}
+
+@media (max-width: 700px) {
+    .side-bar ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+.user-list {
+    margin-bottom: 1rem;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+.search-and-files {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.search-and-files form {
+    display: flex;
+    flex-direction: row;
+}
+
+.file-buttons {
+    display: flex;
+}
+
+.profile {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+}
+
+.avatar {
+    min-width: 50px;
+    max-width: 100px;
+    min-height: 50px;
+    max-height: 100px;
+    border-radius: 100%;
+    background: lightblue;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+.inner-container {
+    width: 80%;
+    background-color: teal;
+}
+
+@media (max-width: 700px) {
+    .inner-container {
+        width: 100%;
+    }
+}
+
+.card-container {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 1px solid black;
+    padding:1rem;
+    flex-grow: 1;
+}
+
+.card-icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.annoucements {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-title {
+    font-weight: 700;
+}
+
+
