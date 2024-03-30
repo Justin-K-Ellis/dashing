@@ -1,6 +1,7 @@
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    box-sizing: border-box;
 }
 
 body {
@@ -16,6 +17,7 @@ ul {
 .outer-container {
     display: flex;
     flex-direction: row;
+    background: lightgray;
 }
 
 @media (max-width: 700px) {
@@ -26,7 +28,7 @@ ul {
 
 .side-bar {
     width: 20%;
-    background-color: salmon;
+    background-color: #40c8ff;
     padding: 1rem;
 }
 
@@ -61,27 +63,75 @@ ul {
 header {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    background: #ff7740;
+    /* align-content: space-around; */
+}
+
+@media (max-width: 700px) {
+    form {
+        padding: 0;
+    }
 }
 
 .search-and-files {
     display: flex;
     flex-direction: column;
     width: 70%;
+    background: white;
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+
+@media (max-width: 700px) {
+    .search-and-files {
+        width: 55%;
+    }
 }
 
 .search-and-files form {
     display: flex;
     flex-direction: row;
+    /* flex-grow: 1; */
+    padding: 1rem;
+}
+
+.search-and-files form input {
+    margin: 0.5rem 2rem 0.5rem 2rem;
+}
+
+@media (max-width: 700px) {
+    .search-and-files form input {
+        margin: 0;
+    }
 }
 
 .file-buttons {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media (max-width: 700px) {
+    .file-buttons {
+        gap: 0;
+    }
 }
 
 .profile {
     width: 30%;
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media (max-width: 700px) {
+    .profile {
+        width: 45%;
+    }
 }
 
 .avatar {
@@ -103,9 +153,14 @@ main {
     flex-direction: row;
 }
 
+@media (max-width: 700px) {
+    main {
+        flex-direction: column;
+    }
+}
+
 .inner-container {
     width: 80%;
-    background-color: teal;
 }
 
 @media (max-width: 700px) {
@@ -121,10 +176,19 @@ main {
     flex-wrap: wrap;
 }
 
+@media (max-width: 700px) {
+    .card-container {
+        width: 100%
+    }
+}
+
 .card {
     border: 1px solid black;
+    margin: 0.5rem;
     padding:1rem;
     flex-grow: 1;
+    background: white;
+    border-radius: 1rem;
 }
 
 .card-icons {
@@ -136,7 +200,23 @@ main {
     width: 30%;
     display: flex;
     flex-direction: column;
+    padding: 0 1rem 0 1rem;
+    background: white;
 }
+
+.annoucements ul li {
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 700px) {
+    .annoucements {
+        width: 100%;
+        padding: 0 1rem 0 1rem;
+    }
+} 
 
 .info-title {
     font-weight: 700;
