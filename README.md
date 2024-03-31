@@ -1,2 +1,2 @@
-# dashing
-A dashboard example
+# Dashing!
+This is a mock dashboard (design only).
